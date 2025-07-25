@@ -12,9 +12,9 @@
 
 ## 🖼️ Screenshots
 
-![Home Page](https://raw.githubusercontent.com/Arijit-mondal099/imagify/main/screenshots/home.png)
-![Image Editor](https://raw.githubusercontent.com/Arijit-mondal099/imagify/main/screenshots/editor.png)
-![Batch Processing](https://raw.githubusercontent.com/Arijit-mondal099/imagify/main/screenshots/batch.png)
+![Home Page](https://github.com/Arijit-mondal099/imagify/blob/main/frontend/public/screenshots/home.png)
+![Image Editor](https://github.com/Arijit-mondal099/imagify/blob/main/frontend/public/screenshots/imageOne.png)
+![Batch Processing](https://github.com/Arijit-mondal099/imagify/blob/main/frontend/public/screenshots/imageTwo.png)
 
 ---
 

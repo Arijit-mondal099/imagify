@@ -10,7 +10,12 @@ const PORT = process.env.PORT || 4000;
 // Middlewares ----->
 app.use(express.json({ limit: "16kb" }));
 app.use(express.urlencoded({ limit: "16kb" }));
-app.use(cors());
+app.use(
+  cors({
+    origin: ["http://localhost:4000", "https://imagify-omega-three.vercel.app"],
+    credentials: true,
+  })
+);
 
 // Routes ---------->
 import userRouter from "./routes/user.routes.js";

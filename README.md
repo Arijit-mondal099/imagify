@@ -12,8 +12,8 @@
 
 ## 🖼️ Screenshots
 
-![Home Page](https://github.com/Arijit-mondal099/imagify/blob/main/frontend/public/screenshots/home.png)
-![Image Editor](https://github.com/Arijit-mondal099/imagify/blob/main/frontend/public/screenshots/imageOne.png)
+!**Home**[Home Page](https://github.com/Arijit-mondal099/imagify/blob/main/frontend/public/screenshots/home.png)
+!**Image**[Image Editor](https://github.com/Arijit-mondal099/imagify/blob/main/frontend/public/screenshots/imageOne.png)
 ![Batch Processing](https://github.com/Arijit-mondal099/imagify/blob/main/frontend/public/screenshots/imageTwo.png)
 
 ---
@@ -22,21 +22,21 @@
 
 **Backend:**
 
-- Node.js
-- Express.js
-- MongoDB
-- Razorpay (for payments)
-- Bcrypt (for auth)
-- ClipDrop API
-- Axios
+- **Node.js**: Runs the backend server and handles API requests.
+- **Express.js**: Provides routing and middleware for building RESTful APIs.
+- **MongoDB**: Stores user data, images, and processing history.
+- **Razorpay**: Manages payment processing for subscriptions and purchases.
+- **Bcrypt**: Secures user passwords through hashing and authentication.
+- **ClipDrop API**: Powers AI-based image manipulation features.
+- **Axios**: Facilitates HTTP requests between frontend and backend services.
 
 **Frontend:**
 
-- React.js
-- Tailwind CSS
-- TensorFlow.js
-- Framer Motion
-- Axios
+- **React.js**: Builds interactive user interfaces and manages application state.
+- **Tailwind CSS**: Provides utility-first CSS for rapid UI development.
+- **TensorFlow.js**: Enables client-side AI-powered image processing.
+- **Framer Motion**: Adds smooth animations and transitions to the UI.
+- **Axios**: Handles HTTP requests between frontend and backend.
 
 ---
 

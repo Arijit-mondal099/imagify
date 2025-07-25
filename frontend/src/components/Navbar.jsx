@@ -31,22 +31,28 @@ const Navbar = () => {
             <div className="flex items-center gap-1 sm:gap-2">
               <p className="text-xs sm:text-sm font-medium text-gray-600 capitalize">Hii! {user.name.split(" ")[0]}</p>
 
-              <div className="relative group cursor-pointer" onClick={() => setOpenLogout(!openLogout)}>
+              <div 
+                className="relative group cursor-pointer" 
+                onClick={() => setOpenLogout(!openLogout)}
+              >
                 <img
                   src={assets.profile_icon}
                   alt="profile_icon"
                   className="w-8 sm:w-10 drop-shadow rounded-full"
                 />
 
-                {openLogout && <div
-                  className="absolute hidden group-hover:block top-0 right-0 z-10 text-black rounded pt-12"
+                <div
+                  className={`
+                    absolute hidden group-hover:block top-0 right-0 z-10 text-black rounded pt-12
+                    ${openLogout && "block"}
+                  `}
                 >
                   <ul className="list-none m-0 p-2 bg-white rounded-md border text-sm font-medium">
                     <li onClick={logoutMethod} className="py-1 px-2 cursor-pointer pr-10">
                       Logout
                     </li>
                   </ul>
-                </div>}
+                </div>
               </div>
             </div>
           </div>

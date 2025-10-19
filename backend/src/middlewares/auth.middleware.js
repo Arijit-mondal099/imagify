@@ -4,7 +4,9 @@ const auth = async (req, res, next) => {
   const token = req.headers["authorization"];
 
   if (!token) {
-    return res.status(401).json({ success: false, message: "Access denied. No token provided." });
+    return res
+      .status(401)
+      .json({ success: false, message: "Access denied. No token provided." });
   }
 
   try {
@@ -13,7 +15,7 @@ const auth = async (req, res, next) => {
     return next();
   } catch (error) {
     console.error("Auth middleware error:", error);
-    return res.status(401).json({ success: flase, message: error.message });
+    return res.status(401).json({ success: false, message: error.message });
   }
 };
 

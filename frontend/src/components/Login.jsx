@@ -25,12 +25,12 @@ const Login = () => {
         });
 
         if (data?.success) {
-          await loadCreditData();
           setShowLogin(false);
           setUser(data?.user);
           setToken(data?.token);
           localStorage.setItem("token", data?.token);
           toast.success("User login successfully.");
+          await loadCreditData();
         } else {
           toast.error(data?.message);
         }
@@ -42,12 +42,12 @@ const Login = () => {
         });
 
         if (data?.success) {
-          await loadCreditData();
           setShowLogin(false);
           setUser(data?.user);
           setToken(data?.token);
           localStorage.setItem("token", data?.token);
           toast.success("User register successfully.");
+          await loadCreditData();
         } else {
           toast.error(data?.message);
         }

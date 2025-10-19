@@ -16,10 +16,10 @@ const AppContextProvider = ({ children }) => {
   const loadCreditData = async () => {
     try {
       const { data } = await axios.get("/api/v1/users/credits", {
-        headers: { Authorization: `${token}` },
+        headers: { Authorization: `${localStorage.getItem("token")}` },
       });
 
-      if ( data?.success ) {
+      if (data?.success) {
         setCredit(data?.credits);
         setUser(data?.user);
       }
@@ -38,17 +38,18 @@ const AppContextProvider = ({ children }) => {
 
   const generateImage = async (prompt) => {
     try {
-      const { data } = await axios.post("/api/v1/images/generate-image",
+      const { data } = await axios.post(
+        "/api/v1/images/generate-image",
         { prompt },
         { headers: { Authorization: `${token}` } }
       );
 
-      if ( data?.success ) {
+      if (data?.success) {
         await loadCreditData();
         return data?.image;
       } else {
         await loadCreditData();
-        if ( credit <= 0 ) {
+        if (credit <= 0) {
           toast.error("Plase buy credit for generate more images");
           navigate("/buy-credit");
         }
